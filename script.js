@@ -6,6 +6,9 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
+  
+  
+
   passwordText.value = password;
 
 }
@@ -59,7 +62,7 @@ function generatePassword() {
   
   
 // 2nd criteria
-var hasUpperCase = confirm("click ok to confirm")
+var hasUpperCase = confirm("click ok to confirm");
   console.log(hasUpperCase)
 
   if(hasUpperCase==true) {
@@ -107,11 +110,24 @@ if(hasSpecChar === false) {
 for (var i = 0; i < special.length; i++) {
   console.log(i, special[i])
 }
+for (var i = 0; i < length.length; i++) {
+     console.log(i, length[i])
+}
+   
+  //concatenation
+  function myFunction() {
+    var length = lowerCase.concat(upperCase, number, special);
+    document.getElementById("generate").innerHTML = length;
 
-   //var random = Math.floor(Math.random() * allowed.length);
-   //password += allowed[random];
-  // pwd += characters.charAt(5);
- }
-// return password
- //console.log
+    console.log(length)
+  }
+// push password to user
+    function myFunction() {
+      length.push("length");
+      document.getElementById("generate").innerHTML = length;
 
+    
+
+  
+  }
+}
